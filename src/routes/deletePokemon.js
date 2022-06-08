@@ -18,7 +18,8 @@ module.exports = (app) => {
         });
       })
       .catch((error) => {
-        const message = 'Le pokémon n\'a pas pu être supprimé. Réessayez plus tard.';
+        const message =
+          "Le pokémon n'a pas pu être supprimé. Réessayez plus tard.";
         res.status(500).json({ message, data: error });
       });
   });
